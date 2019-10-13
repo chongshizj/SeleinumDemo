@@ -1,5 +1,6 @@
 package com.selenium.day1;
 
+import org.junit.Assert;
 import org.testng.annotations.*;
 
 public class TestNGDemo01 {
@@ -25,6 +26,7 @@ public class TestNGDemo01 {
     public void testCase1() throws InterruptedException {
         Thread.sleep(5000);
         System.out.println("注解1");
+        Assert.assertEquals(1, 2);
     }
 
     @Test
